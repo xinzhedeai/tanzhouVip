@@ -1,0 +1,15 @@
+.container{
+	width: 100%;
+}
+.header{
+	width:1200px;
+	color:#999;
+}
+.header > ul{
+	height: 30px;
+	line-height: 30px;
+}
+.header > ul li{
+	float: left;
+}
+	
