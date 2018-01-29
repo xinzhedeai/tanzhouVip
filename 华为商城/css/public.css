@@ -1,4 +1,4 @@
-.clearfix{
+.clearfix:after{
 	display: block;
 	content: '';
 	clear: both;
@@ -8,4 +8,7 @@
 }
 .fr{
 	float: right;
+}
+.bf-none:before{
+	display: none !important;
 }

@@ -1,15 +1,69 @@
+@charset "utf-8";
 .container{
 	width: 100%;
 }
 .header{
 	width:1200px;
+	margin: 0 auto;	
+	font-size: 12px;
 	color:#999;
 }
 .header > ul{
 	height: 30px;
 	line-height: 30px;
 }
-.header > ul li{
+.header > ul> li{
+	position: relative;
 	float: left;
+	/*margin-right: 10px;*/
+	padding:0 5px;
 }
-	
+.header > ul>li a{
+	position: relative;
+    display: inline-block;
+    /*padding-right: 10px;*/
+	color:#999;
+	transition: .5s;
+}
+.header > ul>li a:hover{
+	color: red;
+}
+.header > ul li:before{
+	display: block;
+	position:absolute;
+	top: 9px;
+	left: 0;
+	content: '';
+	width: 1px;
+	height: .8rem;
+	background-color: #ada7a7;
+}
+.header > ul.left_menu > li:last-child .dropDownDiv{
+    padding-right: 16px;
+    border: 1px solid #c0b0b0;
+    box-shadow: 0px 0px 6px 1px #d5d5d5;
+}
+}
+/*制作三角形*/
+.header > ul.left_menu > li:last-child a:after{
+    content: '';
+    /*display: inline-block;*/
+    position: absolute;
+    right: -13px;
+    top: 7px;
+    border: 5px solid transparent;
+    border-top: 10px solid #beb7b7;	
+}
+.header > ul.left_menu > li:last-child:hover a:after{
+	top: 3px;
+    border: 5px solid transparent;
+    border-bottom: 10px solid #beb7b7;	
+}
+/*顶部导航 左侧部分的下拉部分*/
+.header ul.left_menu > li  ol {
+	position: absolute;
+	width:160px;
+	background-color: #FFFDEF;
+	border: 1px solid grey;
+    text-align: center;
+}
