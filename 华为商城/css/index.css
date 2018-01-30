@@ -23,12 +23,12 @@
     display: inline-block;
     /*padding-right: 10px;*/
 	color:#999;
-	transition: .5s;
+	/*transition: .5s;*/
 }
 .header > ul>li a:hover{
 	color: red;
 }
-.header > ul li:before{
+.header > ul > li:before{
 	display: block;
 	position:absolute;
 	top: 9px;
@@ -37,12 +37,22 @@
 	width: 1px;
 	height: .8rem;
 	background-color: #ada7a7;
+	z-index: 1;
 }
 .header > ul.left_menu > li:last-child .dropDownDiv{
+	position: relative;/*之前之所以没盖住兄弟节点，主要是因为没设置定位。因为z-index没生效*/
+    padding-left: 5px;
     padding-right: 16px;
-    border: 1px solid #c0b0b0;
-    box-shadow: 0px 0px 6px 1px #d5d5d5;
+	background-color: #fff;
 }
+.header > ul.left_menu > li:last-child .dropDownDiv:hover{
+	border: 1px solid #f0efef;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px -2px 5px 0 #d5d5d5;
+     z-index:1;
+}
+.header > ul.left_menu > li:last-child .dropDownDiv:hover + ol{
+	display: block;
 }
 /*制作三角形*/
 .header > ul.left_menu > li:last-child a:after{
@@ -50,7 +60,7 @@
     /*display: inline-block;*/
     position: absolute;
     right: -13px;
-    top: 7px;
+    top: 10px;
     border: 5px solid transparent;
     border-top: 10px solid #beb7b7;	
 }
@@ -61,9 +71,13 @@
 }
 /*顶部导航 左侧部分的下拉部分*/
 .header ul.left_menu > li  ol {
+	display: none;
 	position: absolute;
+	right:4px;
+	top:30px;
 	width:160px;
-	background-color: #FFFDEF;
-	border: 1px solid grey;
+	background-color: #FFF;
+    border: 1px solid #e4e0e0;
     text-align: center;
+    box-shadow: 0 0 9px 0 #e4e0e0;
 }
