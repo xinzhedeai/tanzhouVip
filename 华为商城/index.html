@@ -4,11 +4,13 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head>
 	<body>
 		<div class="container">
+			<!--顶部菜单栏开始-->
 			<div class="header clearfix">
 				<ul class="left_menu fl">
 					<li class="bf-none"><a href="">首页</a></li>
@@ -38,24 +40,57 @@
 				<ul class="right_menu fr">
 					<li class="bf-none"><a href="">请登录   注册</a></li>
 					<li><a href="">我的订单</a></li>
-					<li>
+					<li class="pl-none">
 						<div class="dropDownDiv">
-							<a href="" class="triangle">购物车(0)</a>
+							<a href="" class="">
+								<i class="iconfont icon-gouwuche mr-10"></i>购物车(0)
+							</a>
 						</div>
-						<ol>
-							<li>EMUI</li>
-							<li>应用市场</li>
-							<li>华为终端云空间</li>
-							<li>开发者联盟</li>
+						<ol class="right-dropdown">
 							<li>
-								<img src="images/qrCode.png"/>
-								<p>扫一扫，下载客户端</p>
+								<img src="images/gouwuche.png"/>
+								<p>您的购物车是空的，赶紧选购吧~</p>
 							</li>
 						</ol>
 					</li>
 				</ul>
 			</div>
-			
+			<!--顶部菜单栏结束-->
+			<!--导航栏-->
+			<div class="nav w-1200 m0a clearfix	">
+				<div class="logo fl">
+					<img src="images/logo.png"/>
+					<h1>华为商城</h1>
+				</div>
+				<ul class="fl">
+					<li><a href="">华为专区</a></li>
+					<li><a href="">荣耀专区</a></li>
+					<li><a href="">HUAWEI Mate 10</a></li>
+					<li><a href="">荣耀9</a></li>
+					<li><a href="">nova 2s</a></li>
+					<li><a href="">荣耀年货节</a></li>
+				</ul>
+				<form class="fz-12" action="" method="post">
+					<input type="text" value=""/>
+					<div class="searchPHoler">
+						<a class="mr-10">HUAWEI Mate 10</a>
+						<a>荣耀V10</a>
+					</div>
+				</form>
+			</div>
+			<!--导航栏结束-->
+			<!--图标轮播Banner-->
+			<div class="banner">
+				<ul>
+					<li><img src="images/banner1.jpg"/></li>
+					<li><img src="images/banner2.jpg"/></li>
+					<li><img src="images/banner3.jpg"/></li>
+					<li><img src="images/banner4.jpg"/></li>
+					<li><img src="images/banner5.jpg"/></li>
+					<li><img src="images/banner6.jpg"/></li>
+					<li><img src="images/banner7.jpg"/></li>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>

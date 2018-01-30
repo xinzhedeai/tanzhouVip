@@ -39,19 +39,21 @@
 	background-color: #ada7a7;
 	z-index: 1;
 }
-.header > ul.left_menu > li:last-child .dropDownDiv{
+.header > ul > li:last-child .dropDownDiv{
 	position: relative;/*之前之所以没盖住兄弟节点，主要是因为没设置定位。因为z-index没生效*/
     padding-left: 5px;
     padding-right: 16px;
 	background-color: #fff;
 }
-.header > ul.left_menu > li:last-child .dropDownDiv:hover{
+.header > ul > li:last-child .dropDownDiv:hover,
+.header > ul > li:last-child .dropDownDiv + ol:hover{
 	border: 1px solid #f0efef;
     border-bottom: 1px solid transparent;
     box-shadow: 1px -2px 5px 0 #d5d5d5;
      z-index:1;
 }
-.header > ul.left_menu > li:last-child .dropDownDiv:hover + ol{
+.header > ul > li:last-child .dropDownDiv:hover + ol,
+.header > ul > li:last-child .dropDownDiv + ol:hover{
 	display: block;
 }
 /*制作三角形*/
@@ -70,7 +72,7 @@
     border-bottom: 10px solid #beb7b7;	
 }
 /*顶部导航 左侧部分的下拉部分*/
-.header ul.left_menu > li  ol {
+.header ul > li  ol {
 	display: none;
 	position: absolute;
 	right:4px;
@@ -80,4 +82,65 @@
     border: 1px solid #e4e0e0;
     text-align: center;
     box-shadow: 0 0 9px 0 #e4e0e0;
+}
+
+.header ul > li  ol.right-dropdown{
+	width: 400px;
+    height: 160px;
+    padding-top: 50px;
+    padding-bottom: 14px;
+}    
+/*导航栏布局*/
+.nav{
+	
+}
+.nav .logo h1{
+	position: absolute;
+	clip: rect(0,0,0,0);
+}
+.nav > ul >li{
+	float: left;
+	margin: 0 10px;
+}
+.nav > ul >li a{
+	padding:7px auto;
+	border-bottom: 2px solid transparent;
+}
+.nav > ul >li a:hover{
+	padding:4px 0;
+	border-bottom-color:red;
+	color: red;
+}
+.nav form{
+	position: relative;
+}
+.nav form input{
+	width: 310px;
+	height: 40px;
+	margin-left: 70px;
+    border: none;
+    border-bottom: 1px solid #c5b7b7;
+    outline: none;
+    text-indent: 10px;
+}
+.nav form input:focus + .searchPHoler{
+	display: none;
+}
+.nav form .searchPHoler{
+	position: absolute;
+    right: 20px;
+    top: 21px;
+}
+.nav form .searchPHoler a{
+	background-color: #efe1e1;
+	cursor:pointer;
+}
+.nav form .searchPHoler a:hover{
+	color:red;
+}
+.banner ul{
+	overflow: hidden;
+}
+.banner ul li img{
+	float: left;
 }
