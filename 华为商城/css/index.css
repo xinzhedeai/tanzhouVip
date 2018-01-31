@@ -138,9 +138,45 @@
 .nav form .searchPHoler a:hover{
 	color:red;
 }
-.banner ul{
+/*轮播banner*/
+.banner{
+	position: relative;
+	width: 100%;
 	overflow: hidden;
 }
-.banner ul li img{
+/*.banner ul{
+	width: 13440px;
+}
+.banner ul li{
 	float: left;
 }
+.banner ul li img{
+	width: 1920px;
+	height: 450px;
+}*/
+banner ul.banner-menu-lv1{
+	position: absolute;
+	width: 240px;
+	height: 450px;
+	background-color: #431015;
+} 
+
+banner ul.banner-menu-lv1 li{
+}
+
+
+
+
+
+  
+/*轮播插件分页器样式重写*/
+.swiper-pagination-bullet{
+	width: 14px;
+    height: 14px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+ 

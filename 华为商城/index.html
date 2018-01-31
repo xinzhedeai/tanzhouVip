@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head>
@@ -81,16 +82,81 @@
 			<!--导航栏结束-->
 			<!--图标轮播Banner-->
 			<div class="banner">
-				<ul>
-					<li><img src="images/banner1.jpg"/></li>
-					<li><img src="images/banner2.jpg"/></li>
-					<li><img src="images/banner3.jpg"/></li>
-					<li><img src="images/banner4.jpg"/></li>
-					<li><img src="images/banner5.jpg"/></li>
-					<li><img src="images/banner6.jpg"/></li>
-					<li><img src="images/banner7.jpg"/></li>
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><img src="images/banner1.jpg"/></div>
+				        <div class="swiper-slide"><img src="images/banner2.jpg"/></div>
+				        <div class="swiper-slide"><img src="images/banner3.jpg"/></div>
+			            <div class="swiper-slide"><img src="images/banner4.jpg"/></div>
+				        <div class="swiper-slide"><img src="images/banner5.jpg"/></div>
+				        <div class="swiper-slide"><img src="images/banner6.jpg"/></div>
+			            <div class="swiper-slide"><img src="images/banner7.jpg"/></div>
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				</div>
+				<!--轮播结束-->
+				<!--商品类菜单展示-->
+				<ul class="banner-menu-lv1">
+					<li>
+						<dl>
+							<dt>手机</dt>
+							<dd>手机</dd>
+							<dd>P系列</dd>
+							<i class="iconfont"></i>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>笔记本 & 平板</dt>
+							<dd>笔记本电脑</dd>
+							<dd>平板电脑</dd>
+							<i class="iconfont"></i>
+						</dl>
+					</li>
+					<li>
+						<dl>
+
+							<dt>智能穿戴</dt>
+							<dd>手环</dd>
+							<dd>手表</dd>
+							<dd>VR</dd>
+							<i class="iconfont"></i>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>智能家居</dt>
+							<dd>路由器 </dd>
+							<dd>电视盒子</dd>
+							<dd>生态产品</dd>
+							<i class="iconfont"></i>
+						</dl>
+					</li>
+					<li>
+  
+						<dl>
+							<dt>通用配件</dt>
+							<dd>移动电源</dd>
+							<dd>耳机</dd>
+							<dd>音箱</dd>
+							<i class="iconfont"></i>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>专属配件</dt>
+							<dd>保护壳</dd>
+							<dd>保护套</dd>
+							<dd>贴膜</dd>
+							<i class="iconfont"></i>
+						</dl>
+					</li>
 				</ul>
 			</div>
+			<!--banner以及商品类菜单结束-->
 		</div>
+		<script src="lib/swiper/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js"></script>
 	</body>
 </html>
