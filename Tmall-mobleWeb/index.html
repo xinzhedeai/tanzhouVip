@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>天猫商城</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div id="wraper">
+			<div id="header">
+				<div class="top clearfix">
+					<a class="menu fl">
+						<img src="images/m-nav5.png"/>
+					</a>
+					<a class="login fr" href="">登录</a>
+					<img class="db ma logo" src="images/logotitle-800-140.png"/>
+					
+				</div>
+				<div class="search">
+					
+				</div>
+			</div>
+		</div>
+	
+		<script type="text/javascript">
+			//js里需要写的改变根标签字体大小的js代码：
+			(function change(){
+				var oFz = document.getElementsByTagName("html")[0];
+				var width = window.innerWidth;
+				oFz.style.fontSize = width/10 +"px";
+				window.onresize=function(){change();};
+			})();
+		</script>
+	</body>
+</html>
