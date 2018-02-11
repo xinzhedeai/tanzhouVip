@@ -14,15 +14,55 @@
 	width: 100%;
 }
 #header .menu img{
-    width: .8rem;
-    height: .8rem;
+	margin-top:.3rem;
+    /*width: .8rem;
+    height: .8rem;*/
 }
 #header .logo{
     width: 5.3rem;
     height: 1rem;
 }
 #header .search{
-	width: 9.52rem;
-	height: 1.06rem;
+	position: relative;
+    width: 7.52rem;
+    height: .33rem;
+    padding: .3rem 1rem;
 	background-color: #fff;
+	color: #c7c2c2;
+}
+#header .search:before{
+	display: inline-block;
+	width: .4rem;
+	height: .4rem;
+	content: '';
+	position: absolute;
+	top: .29rem;
+	left: .24rem;
+	background: url(../images/search.png) no-repeat center/.4rem;
+}
+
+/*导航栏nav*/
+ul.nav{
+	display: flex;
+	justify-content: space-around;
+	margin-top: .053rem;
+	text-align: center;
+}
+ul.nav > li img{
+	width: 1.28rem;
+	height: 1.28rem;
+}
+ul.nav > li p{
+	padding:.26rem 0;
+	font-size: .32rem;
+}
+.banner img{
+	width: 100%;
+	height: 3.46rem;
+}
+
+.rob-purchase img{
+	width: 100%;
+	height: 3.2rem;
+	background-color: #f2f2f2;
 }

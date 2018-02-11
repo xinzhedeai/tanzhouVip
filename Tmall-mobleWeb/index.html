@@ -13,18 +13,59 @@
 			<div id="header">
 				<div class="top clearfix">
 					<a class="menu fl">
-						<img src="images/m-nav5.png"/>
+						<img src="images/catgoryIcon.png"/>
 					</a>
-					<a class="login fr" href="">登录</a>
+					<a class="login fr c-fff m-t-04" href="">登录</a>
 					<img class="db ma logo" src="images/logotitle-800-140.png"/>
 					
 				</div>
-				<div class="search">
-					
+				<div class="search">搜索商品、品牌</div>
+			</div><!--顶部栏结束-->
+			<ul class="nav">
+				<li>
+					<img src="images/m-nav1.png" alt="" />
+					<p>苏宁易购</p>
+				</li>
+				<li>
+					<img src="images/m-nav2.png" alt="" />
+					<p>天猫超市</p>
+				</li>
+				<li>
+					<img src="images/m-nav3.png" alt="" />
+					<p>天猫国际</p>
+				</li>
+				<li>
+					<img src="images/m-nav4.png" alt="" />
+					<p>聚划算</p>
+				</li>
+				<li>
+					<img src="images/m-nav5.png" alt="" />
+					<p>分类</p>
+				</li>
+			</ul>
+			<!--轮播banner-->
+			<div class="banner">
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="swiper-slide"><img src="images/banner1.png" alt="" /></div>
+				    <div class="swiper-slide"><img src="images/banner2.jpg" alt="" /></div>
+				    <div class="swiper-slide"><img src="images/banner3.jpg" alt="" /></div>
+				    <div class="swiper-slide"><img src="images/banner4.jpg" alt="" /></div>
+				    <div class="swiper-slide"><img src="images/banner5.jpg" alt="" /></div>
+				    <div class="swiper-slide"><img src="images/banner6.jpg" alt="" /></div>
+				    <div class="swiper-slide"><img src="images/banner7.png" alt="" /></div>
+				    <div class="swiper-slide"><img src="images/banner8.jpg" alt="" /></div>
+				    <div class="swiper-slide"><img src="images/banner9.jpg" alt="" /></div>
+				  </div>
+				  <div class="swiper-pagination"></div>
 				</div>
 			</div>
+			<!--春节不打烊gif图-->
+			<div class="rob-purchase">
+				<img src="images/chunjiebudayang.gif"/>
+			</div>
 		</div>
-	
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			//js里需要写的改变根标签字体大小的js代码：
 			(function change(){
@@ -33,6 +74,13 @@
 				oFz.style.fontSize = width/10 +"px";
 				window.onresize=function(){change();};
 			})();
+			//轮播
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: true,//可选选项，自动滑动
+				pagination: {
+				    el: '.swiper-pagination',
+				},
+			})
 		</script>
 	</body>
 </html>
