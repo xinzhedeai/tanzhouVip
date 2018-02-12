@@ -15,8 +15,8 @@
 }
 #header .menu img{
 	margin-top:.3rem;
-    /*width: .8rem;
-    height: .8rem;*/
+    width: .6rem;
+    height: .5rem;
 }
 #header .logo{
     width: 5.3rem;
@@ -29,6 +29,7 @@
     padding: .3rem 1rem;
 	background-color: #fff;
 	color: #c7c2c2;
+	font-size: .32rem;
 }
 #header .search:before{
 	display: inline-block;
@@ -65,4 +66,36 @@ ul.nav > li p{
 	width: 100%;
 	height: 3.2rem;
 	background-color: #f2f2f2;
+}
+/*活动搞起来*/
+.go-activity{
+	width: 9.46rem;
+	height: 6.4rem;
+	background-color:#fff;
+	box-shadow: 1px 1px 1px #eee, -1px -1px 1px #eee;
+}
+.go-activity .app{
+	width: 9.46rem;
+	border-bottom: 1px solid #eee;
+	font-size: .32rem;
+}
+.go-activity .app .text{
+	/* float: left; */
+	display: inline-block;
+	width: 4.54rem;
+	height:1.5rem;
+}
+.go-activity .app .text p{
+	margin:.18rem 0.1rem;
+}
+.go-activity .app .download-app{
+	/* display: inline-block; */
+	float: right;
+	width: 2.66rem;
+	height: .8rem;
+	margin: .3rem .3rem 0 0;
+	background-color: #FF0036;
+	line-height: .8rem;
+	text-align: center;
+	border-radius: .5rem;
 }
