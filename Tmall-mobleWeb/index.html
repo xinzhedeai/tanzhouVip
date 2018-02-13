@@ -1,101 +1,164 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>天猫商城</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-	</head>
-	<body>
-		<div id="wraper">
-			<div id="header">
-				<div class="top clearfix">
-					<a class="menu fl">
-						<img src="images/catgoryIcon.png"/>
-					</a>
-					<a class="login fr c-fff m-t-04 f-s-32" href="">登录</a>
-					<img class="db ma logo" src="images/logotitle-800-140.png"/>
-					
-				</div>
-				<div class="search">搜索商品、品牌</div>
-			</div><!--顶部栏结束-->
-			<ul class="nav">
-				<li>
-					<img src="images/m-nav1.png" alt="" />
-					<p>苏宁易购</p>
-				</li>
-				<li>
-					<img src="images/m-nav2.png" alt="" />
-					<p>天猫超市</p>
-				</li>
-				<li>
-					<img src="images/m-nav3.png" alt="" />
-					<p>天猫国际</p>
-				</li>
-				<li>
-					<img src="images/m-nav4.png" alt="" />
-					<p>聚划算</p>
-				</li>
-				<li>
-					<img src="images/m-nav5.png" alt="" />
-					<p>分类</p>
-				</li>
-			</ul>
-			<!--轮播banner-->
-			<div class="banner">
-				<div class="swiper-container">
-				  <div class="swiper-wrapper">
-				    <div class="swiper-slide"><img src="images/banner1.png" alt="" /></div>
-				    <div class="swiper-slide"><img src="images/banner2.jpg" alt="" /></div>
-				    <div class="swiper-slide"><img src="images/banner3.jpg" alt="" /></div>
-				    <div class="swiper-slide"><img src="images/banner4.jpg" alt="" /></div>
-				    <div class="swiper-slide"><img src="images/banner5.jpg" alt="" /></div>
-				    <div class="swiper-slide"><img src="images/banner6.jpg" alt="" /></div>
-				    <div class="swiper-slide"><img src="images/banner7.png" alt="" /></div>
-				    <div class="swiper-slide"><img src="images/banner8.jpg" alt="" /></div>
-				    <div class="swiper-slide"><img src="images/banner9.jpg" alt="" /></div>
-				  </div>
-				  <div class="swiper-pagination"></div>
-				</div>
-			</div>
-			<!--春节不打烊gif图-->
-			<div class="rob-purchase">
-				<img src="images/chunjiebudayang.gif"/>
-			</div>
-			<!-- 新人活动  -->
-			<div class="go-activity ma m-t-26">
-				<div class="app p-t-34">
-					<img class="wh-1-25 m-l-34" src="images/newperson-tmall.png" alt="">
-					<div class="text">
-						<p>去<span class="c-ff0 f-w-b">天猫APP</span></p>
-						<p>享受以下专享权益和优惠</p>
-					</div>
-					<a href="" class="download-app c-fff">
-						去下载
-					</a>
-					<!-- <img src="images/download.png" alt="" class="icon"> -->
-				</div>
+
+<head>
+	<meta charset="utf-8" />
+	<title>天猫商城</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+	<div id="wraper">
+		<div id="header">
+			<div class="top clearfix">
+				<a class="menu fl">
+					<img src="images/catgoryIcon.png" />
+				</a>
+				<a class="login fr c-fff m-t-04 f-s-32" href="">登录</a>
+				<img class="db ma logo" src="images/logotitle-800-140.png" />
 
 			</div>
+			<div class="search">搜索商品、品牌</div>
 		</div>
-		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			//js里需要写的改变根标签字体大小的js代码：
-			(function change(){
-				var oFz = document.getElementsByTagName("html")[0];
-				var width = window.innerWidth;
-				oFz.style.fontSize = width/10 +"px";
-				window.onresize=function(){change();};
-			})();
-			//轮播
-			var mySwiper = new Swiper('.swiper-container', {
-				autoplay: true,//可选选项，自动滑动
-				pagination: {
-				    el: '.swiper-pagination',
-				},
-			})
-		</script>
-	</body>
+		<!--顶部栏结束-->
+		<ul class="nav">
+			<li>
+				<img src="images/m-nav1.png" alt="" />
+				<p>苏宁易购</p>
+			</li>
+			<li>
+				<img src="images/m-nav2.png" alt="" />
+				<p>天猫超市</p>
+			</li>
+			<li>
+				<img src="images/m-nav3.png" alt="" />
+				<p>天猫国际</p>
+			</li>
+			<li>
+				<img src="images/m-nav4.png" alt="" />
+				<p>聚划算</p>
+			</li>
+			<li>
+				<img src="images/m-nav5.png" alt="" />
+				<p>分类</p>
+			</li>
+		</ul>
+		<!--轮播banner-->
+		<div class="banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/banner1.png" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner2.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner3.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner4.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner5.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner6.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner7.png" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner8.jpg" alt="" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner9.jpg" alt="" />
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!--春节不打烊gif图-->
+		<div class="rob-purchase">
+			<img src="images/chunjiebudayang.gif" />
+		</div>
+		<!-- 新人活动  -->
+		<div class="go-activity ma m-t-26">
+			<div class="app p-t-34">
+				<img class="wh-1-25 m-l-34" src="images/newperson-tmall.png" alt="">
+				<div class="text">
+					<p>去
+						<span class="c-ff0 f-w-b">天猫APP</span>
+					</p>
+					<p>享受以下专享权益和优惠</p>
+				</div>
+				<a href="" class="download-app c-fff">
+					去下载
+				</a>
+				<!-- <img src="images/download.png" alt="" class="icon"> -->
+			</div>
+			<ul class="new-person-bag clearfix">
+				<li>
+					<h3>三单有礼</h3>
+					<p>精选商品专享</p>
+					<p>满三单抽100元红包</p>
+					<img src="images/newperson-left.png" alt="">
+				</li>
+				<li>
+					<h3>新人礼包</h3>
+					<p>下载首次登陆</p>
+					<p>领388元大礼包</p>
+					<img src="images/newperson-middle.png" alt="">
+				</li>
+				<li class="bd-r-none">
+					<h3>充值优惠</h3>
+					<p>天猫超市超值福利</p>
+					<p>超市卡充1000赠50</p>
+					<img src="images/newperson-right.png" alt="">
+				</li>
+			</ul>
+		</div>
+		<div class="title clearfix w-9-46 ma">
+			<div class="fl">
+				<span>天貓</span>
+				<span class="f-s-32">官方直營</span>
+			</div>
+			<div class="fr">
+				<span>官方直采·极速物流·售后无忧</span>
+			</div>
+		</div>
+		<div class="special-goods">
+			<div class="pic-text">
+				<p>天猫超市</p>
+				<p>春节照常买</p>
+				<p>好货送到家</p>
+				<img src="images/milk.webp" alt="">
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//js里需要写的改变根标签字体大小的js代码：
+		(function change() {
+			var oFz = document.getElementsByTagName("html")[0];
+			var width = window.innerWidth;
+			oFz.style.fontSize = width / 10 + "px";
+			window.onresize = function () { change(); };
+		})();
+		//轮播
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: true,//可选选项，自动滑动
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		})
+	</script>
+</body>
+
 </html>

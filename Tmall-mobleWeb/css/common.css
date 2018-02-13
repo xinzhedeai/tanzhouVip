@@ -21,9 +21,11 @@ img{vertical-align: top;}
 .c-fff{color:#fff;}
 .c-ff0{color: #f00;}
 .f-w-b{font-weight: bold;}
-.f-s-32{font-size: .32rem;}
+.f-s-32{font-size: .32rem !important;}
 .wh-1-25{width: 1.25rem; height: 1.25rem;}
+.w-9-46{width:9.46rem;}
 .m-l-34{margin-left: .34rem;}
 .m-t-26{margin-top: .26rem;}
 .p-t-34{padding-top: .34rem;}
+.bd-r-none{border-right:none !important;}
 

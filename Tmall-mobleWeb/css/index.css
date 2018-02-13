@@ -99,3 +99,33 @@ ul.nav > li p{
 	text-align: center;
 	border-radius: .5rem;
 }
+.go-activity ul.new-person-bag > li{
+	float: left;
+	padding-left: .3888rem;
+	border-right: 1px solid #eee;
+}
+.go-activity ul.new-person-bag > li h3{
+	padding: .3rem 0;
+	font-size: .37rem;
+}
+.go-activity ul.new-person-bag > li p{
+	font-size: .32rem;
+}
+.go-activity ul.new-person-bag > li img{
+	width: 2.64rem;
+	height: 1.76rem;
+	margin-top: .6rem;
+}
+
+#wraper .title{
+	margin-top: .53rem;
+	line-height: .72rem;
+}
+#wraper .title .fl span:first-child{
+	font-size: .37rem;
+}
+.special-goods .pic-text{
+	width:3.86rem;
+	height: 5.33rem;
+	background: url('../images/supermarket1.jpg') top left/cover no-repeat;
+}
