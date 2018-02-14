@@ -125,7 +125,28 @@ ul.nav > li p{
 	font-size: .37rem;
 }
 .special-goods .pic-text{
+	position: relative;
 	width:3.86rem;
 	height: 5.33rem;
 	background: url('../images/supermarket1.jpg') top left/cover no-repeat;
+}
+.special-goods .pic-text p{
+	margin-left: .42rem;
+}
+.special-goods .pic-text p:first-child{
+	padding-top: .32rem;
+}
+.special-goods .pic-text img{
+	position: absolute;
+	top: 2.66rem;
+	left: .66rem;
+}
+.special-goods .direct{
+	width: 5.6rem;
+	height: 2.4rem;
+	background-color: pink;
+}
+.special-goods .direct img{
+	width: 2.18rem;
+	height: .4rem;
 }
