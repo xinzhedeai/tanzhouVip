@@ -124,6 +124,11 @@ ul.nav > li p{
 #wraper .title .fl span:first-child{
 	font-size: .37rem;
 }
+.special-goods{
+	margin: 0 .26rem;
+	box-shadow: 1px -2px 5px 1px #e6e5e5,
+				-1px 2px 5px 1px #e6e5e5;
+}
 .special-goods .pic-text{
 	position: relative;
 	width:3.86rem;
@@ -141,12 +146,52 @@ ul.nav > li p{
 	top: 2.66rem;
 	left: .66rem;
 }
+/* 天猫直营 */
 .special-goods .direct{
+	position: relative;
 	width: 5.6rem;
 	height: 2.4rem;
 	background-color: pink;
 }
-.special-goods .direct img{
+.special-goods .direct p:nth-of-type(1){
+	margin-left: .4rem;
+	margin-top: .34rem;;
+	font-size: .37rem;
+	font-weight: bold;
+	color: #817ff2;
+}
+.special-goods .direct p:nth-of-type(2){
+	margin: .08rem 0 .08rem .4rem;
+	font-size: .32rem;
+}
+
+.special-goods .direct img:nth-of-type(1){
 	width: 2.18rem;
 	height: .4rem;
+}
+.special-goods .direct img:nth-of-type(2){
+	position: absolute;
+	top: .2rem;
+    right: .4rem;
+	width: 1.97rem;
+	height: 1.97rem;
+}
+.special-goods .bottom-wrap{
+	width: 5.6rem;
+}
+.special-goods .bottom-wrap div{
+	width: 2rem;
+    height: 2.13rem;
+    padding: .4rem;
+}
+.special-goods .bottom-wrap p:nth-of-type(1){
+	font-size: .37rem;
+	font-weight: bold;
+}
+.special-goods .bottom-wrap p:nth-of-type(2){
+	font-size: .32rem;
+}
+.special-goods .bottom-wrap img{
+	width: 1.13rem;
+	height: 1.13rem;
 }
