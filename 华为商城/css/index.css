@@ -154,16 +154,34 @@
 	width: 1920px;
 	height: 450px;
 }*/
-banner ul.banner-menu-lv1{
+.banner ul.banner-menu-lv1{
 	position: absolute;
+	top: 0;
 	width: 240px;
 	height: 450px;
 	background-color: #431015;
+	z-index: 1;
 } 
 
-banner ul.banner-menu-lv1 li{
+.banner ul.banner-menu-lv1 li{
+	width: 240px;
+	/* height: 75px; */
+	padding-left: 17px;
+	background-color: #646060;
+	font-size: 14px;
+	color: #999999;
 }
-
+.banner ul.banner-menu-lv1 li:hover{
+	background-color: #3d3d3d;
+	color: #fff;
+}
+.banner ul.banner-menu-lv1 li > dl{
+	padding: 15px 0 26px 0;
+}
+.banner ul.banner-menu-lv1 li > dl dd{
+	float: left;
+	margin-right: 13px;
+}
 
 
 

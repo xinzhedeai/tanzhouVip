@@ -1,5 +1,14 @@
 body{
 	margin:0;
 }
-ul, ol{list-style: none; -webkit-padding-start: 0;}
+ul, ol{
+	list-style: none;
+	-webkit-padding-start: 0;
+}
+ul, ol, dl, dd{
+	margin: 0;
+	padding: 0;
+}
+
 a{text-decoration:none;}
+
