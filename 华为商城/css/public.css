@@ -9,6 +9,9 @@
 .fr{
 	float: right;
 }
+.ib{
+	display: inline-block;
+}
 .bf-none:before{
 	display: none !important;
 }
@@ -32,4 +35,18 @@
 }
 .fz-12{
 	font-size: 12px;
+}
+.fz-14{
+	font-size: 14px;
+}
+.mb-3{margin-bottom: 3px;}
+.pl-40{
+	padding-left: 40px;
+}
+.ptb-30{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.pr-30{
+	padding-right: 30px;
 }

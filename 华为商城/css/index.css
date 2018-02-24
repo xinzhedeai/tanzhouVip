@@ -166,25 +166,41 @@
 .banner ul.banner-menu-lv1 li{
 	width: 240px;
 	/* height: 75px; */
-	padding-left: 17px;
+	/* padding-left: 17px; */
 	background-color: #646060;
 	font-size: 14px;
 	color: #999999;
 }
-.banner ul.banner-menu-lv1 li:hover{
+.banner ul.banner-menu-lv1 li:hover dl{
 	background-color: #3d3d3d;
 	color: #fff;
 }
 .banner ul.banner-menu-lv1 li > dl{
-	padding: 15px 0 26px 0;
+	padding: 15px 0 15px 17px;
 }
 .banner ul.banner-menu-lv1 li > dl dd{
 	float: left;
 	margin-right: 13px;
 }
+.banner ul.banner-menu-lv1 li > dl i{
+	float: right;
+	font-size: 23px;
+}
+/* 分类列表详情tab内容 */
+.banner ul.banner-menu-lv1 li .category-detail{
+	position: absolute;
+	top: 0;
+    left: 240px;
+	width: 650px;
+	height: 450px;
+	background: #fff;
+}
+.banner ul.banner-menu-lv1 li .category-detail .title{
+	/* height: 70px; */
+	padding: 30px 30px 30px 40px;
+	/* line-height: 70px; */
 
-
-
+}
 
   
 /*轮播插件分页器样式重写*/
@@ -197,4 +213,3 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background-color: #fff;
 }
- 
