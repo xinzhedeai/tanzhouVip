@@ -204,13 +204,42 @@
 } 
 .banner ul.banner-menu-lv1 > li .category-detail .body{
 	width: 582px;
-	height: 137px;
-	padding: 36px 28px 0 40px;
+	height: 104px;
+	padding: 30px 28px 0 40px;
+	border-top: 1px solid #eee;
 }
 .banner ul.banner-menu-lv1 > li .category-detail .body li{
 	float: left;
 	margin-right: 30px;
 	padding-bottom: 36px;
+}
+.banner ul.banner-menu-lv1 > li .category-detail .footer{
+	width: 648px;
+	height: 236px;
+	border-top: 1px solid #eee;
+	text-align: center;
+}
+.banner ul.banner-menu-lv1 > li .category-detail .footer li{
+	width: 25%;
+    height: 236px;
+    float: left;
+	box-shadow: 1px 1px 1px #eee;
+}
+.banner ul.banner-menu-lv1 > li .category-detail .footer li img{
+	width: 118px;
+	height: 118px;
+	margin-top: 21px;
+    vertical-align: top;
+
+}
+.banner ul.banner-menu-lv1 > li .category-detail .footer li p:nth-of-type(1){
+	width: 142px;
+	margin: 14px auto 4px;
+	line-height: 14px;
+}
+.banner ul.banner-menu-lv1 > li .category-detail .footer li p:nth-of-type(1) + p{
+	margin-top: 0;
+	color: red;
 }
 /*轮播插件分页器样式重写*/
 .swiper-pagination-bullet{
