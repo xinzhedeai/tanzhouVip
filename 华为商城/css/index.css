@@ -185,8 +185,10 @@
 	float: right;
 	font-size: 23px;
 }
+
 /* 分类列表详情tab内容 */
 .banner ul.banner-menu-lv1 > li .category-detail{
+	display: none;
 	position: absolute;
 	top: 0;
     left: 240px;
@@ -195,6 +197,9 @@
 	background: #fff;
 	border-top: 1px solid #eaeaea;
 	border-bottom:1px solid #eaeaea;
+}
+.banner ul.banner-menu-lv1 > li:hover .category-detail{
+	display: block;	
 }
 .banner ul.banner-menu-lv1 > li .category-detail .title{
 	/* height: 70px; */
